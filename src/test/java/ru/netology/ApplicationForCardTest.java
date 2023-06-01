@@ -22,7 +22,9 @@ public class ApplicationForCardTest {
 
     @BeforeEach
     public void setup() {
+
         ChromeOptions options = new ChromeOptions();
+        options.setHeadless(true);
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--no-sandbox");
         options.addArguments("--headless");
